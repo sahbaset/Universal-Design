@@ -1,0 +1,75 @@
+/* fonts n colors */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: #f8f9fa; 
+    color: #333; 
+}
+
+/* heading */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    color: #004085;
+}
+
+h3 {
+    font-family: 'Roboto', serif;
+    color: #004085; 
+}
+
+
+/* Hide only visually, but have it available for screen readers: */
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* center main content */
+.wrapper {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: hsl(211, 100%, 35%);
+}
+
+/* link hover */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* image */
+img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* image caption */
+figcaption {
+    font-size: 0.9rem;
+    color: hsl(211, 100%, 35%);
+    text-align: center;
+    margin-top: 0.5rem;
+}
+

@@ -33,8 +33,8 @@ header {
 }
 
 main h2,
-.aside1 h3,
-.aside2 h3 {
+.aside1 h2,
+.aside2 h2 {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0.5rem;
 }
@@ -109,7 +109,6 @@ nav ul li a:hover {
         gap: 8px;
     }
 
-    /* aside sections with equal space */
     .aside1, .aside2 {
         grid-column: span 1;
     }

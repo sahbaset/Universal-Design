@@ -2,34 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>Sahba Setareh</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f0f4f8;
+        }
+        a {
+            color: #ffffff; 
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #7afdff;
+        }
+        nav {
+            background-color: #005f73;
+            color: #fdfdfd;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-container {
+            display: flex;
+            flex-direction: column; /* Stack title and links vertically */
+            align-items: center;
+        }
+        nav h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .skip-nav {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            z-index: 100;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: top 0.3s;
+        }
+
+        .skip-nav:focus {
+            top: 10px;
+        }
+
+        .about-me {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 2rem;
+            background: #ffffff; 
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-me img {
+            width: 500px; 
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about-me-text {
+            flex: 1;
+            min-width: 280px;
+        }
+        .about-me-text h2 {
+            color: #005f73; 
+        }
+        .about-me-text p {
+            margin-top: 1rem;
+            color: #333; 
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #005f73; 
+            color: #fdfdfd;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        /* responsive adjustments */
+        @media (max-width: 768px) {
+            .about-me {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-me img {
+                max-width: 90%; 
+            }
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- Navigation Bar -->
     <header>
-        <h1>Sahba Setareh</h1>
-        <h2>Universal Design</h2>
+        <nav>
+            <div class="nav-container">
+                <h1>Universal Design for Digital Media</h1>
+                <div class="nav-links">
+                    <a href="http://sahbaset.me/Universal-Design/hw4/page.html" aria-label="Lab 2">Lab 2</a>
+                    <a href="http://sahbaset.me/Universal-Design/hw5/tables.html" aria-label="Lab 3">Lab 3</a>
+                    <a href="https://sahbaset.me/Universal-Design/hw6/multicolumn.html" aria-label="Lab 4">Lab 4</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section id="about">
-        <h3>About Me</h3>
-        <p>
-            Hello, my name is Sahba and I am an undergraduate student at CU Boulder. I enjoy making 2D and 3D art, as well as learning about natural sciences. 
-        </p>
-    </section>
+    <!-- Main Content -->
+    <main id="main-content" class="container">
+        <section class="about-me">
+            <img src="me.JPG" alt="About me image placeholder">
+            <div class="about-me-text">
+                <h2>About Me</h2>
+                <p>I'm Sahba Setareh, an artist and designer from Colorado with a deep passion for nature and storytelling. My art is inspired by the dramatic landscapes, wildlife, and weather patterns I grew up with, and I bring my experiences in forest and wildlife management into my creative work. I specialize in blending traditional and digital art, exploring 3D and 2D techniques to create immersive experiences. Currently, I'm working on a Capstone project: a stylized 3D game set in Kenai Fjords National Park, aimed at making learning about the park’s unique ecosystem and climate change impact more accessible.</p>
+            </div>
+        </section>
+    </main>
 
-    <section id="assignments">
-        <h2>Coding Assignments</h2>
-        <ul>
-            <a href="http://sahbaset.me/Universal-Design/hw4/page.html">Coding & Posting a Web Page - The Basics</a>
-        </ul>
-        <ul>
-            <a href="http://sahbaset.me/Universal-Design/hw5/tables.html">Tables, Forms, Tabbed Browsing, and Screen Reading</a>
-        </ul>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p></p>
+        <p>ATLS-CSCI 3150 (Fall 2024)</p>
     </footer>
 </body>
 </html>

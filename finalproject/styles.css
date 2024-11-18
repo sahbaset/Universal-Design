@@ -1,0 +1,240 @@
+/* Main styles for layout and design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+header {
+    grid-area: header;
+    background-color: #374151;
+    color: #f9fafb;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #1f2937;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #374151;
+    color: #f9fafb;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Flexbox for Navigation Links */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f9fafb;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #60a5fa;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    body {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        background-color: #3b82f6;
+        color: #f9fafb;
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    nav ul li a:hover {
+        background-color: #2563eb;
+    }
+
+    /* Flexbox for Navigation Links */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+nav ul li {
+    text-align: center;
+    flex: 1; /* Ensure each item takes up space */
+}
+
+nav ul li a {
+    display: block; /* Makes the link cover the whole list item */
+    text-decoration: none;
+    color: #f9fafb;
+    padding: 15px 20px; /* Increased padding for larger touch targets */
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: transparent; /* Transparent by default */
+}
+
+nav ul li a:hover {
+    color: #60a5fa;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        background-color: #3b82f6;
+        color: #f9fafb;
+        border-radius: 8px;
+        padding: 18px 20px; /* Larger padding for better touch targets */
+    }
+
+    nav ul li a:hover {
+        background-color: #2563eb;
+    }
+}
+
+/* Styles for the aside navigation */
+.nav-aside {
+    grid-area: aside;
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 1rem;
+}
+
+.nav-aside nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-aside nav ul li {
+    margin-bottom: 10px;
+}
+
+.nav-aside nav ul li a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 5px;
+}
+
+.nav-aside nav ul li a:hover {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+/* Update grid layout to include the aside section */
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "aside main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Styling for the aside navigation */
+.nav-aside {
+    grid-area: aside;
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.nav-aside nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-aside nav ul li {
+    margin-bottom: 10px;
+}
+
+.nav-aside nav ul li a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 5px;
+}
+
+.nav-aside nav ul li a:hover {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+}

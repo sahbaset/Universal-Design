@@ -6,8 +6,53 @@
     <title>What is Universal Design</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Skip link styles */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: #000;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #f0f0f0;
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
     <header>
         <h1>What is Universal Design</h1>
     </header>
@@ -21,18 +66,22 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="main-content">
         <h2>Definition and Principles</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Universal design refers to the creation of products, environments, and systems that are accessible and usable by all people, regardless of their abilities or circumstances. Its core principles include equitable use, which ensures that designs are beneficial to all users without stigmatization; flexibility, allowing for varied user preferences and needs; simplicity, making designs easy to understand and use; and the idea that a universal approach is beneficial not only to those with specific needs but also to the general public. By prioritizing inclusivity from the outset, universal design reduces the need for adaptations and promotes overall usability for everyone.</p>
 
         <h2>Historical Context and Origins</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Universal design originated in the field of architecture in the 1980s, led by designers and advocates like Ronald Mace, who sought to create environments that could be used by people with disabilities. Over time, the concept expanded into a broader philosophy, influencing not only architecture but also product design, digital technology, and even services. As industries began recognizing the benefits of accessible and inclusive designs for all, the principles of universal design gained traction in various fields, including education, urban planning, and technology, evolving from a focus on physical spaces to include digital and virtual environments.</p>
 
         <h2>Relation to Accessibility</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>While universal design shares many principles with accessibility, it goes beyond simply accommodating individuals with disabilities. Accessibility focuses on removing barriers for people with specific impairments, while universal design seeks to address the needs of all people, considering a wide range of abilities, ages, and situations. By incorporating principles like flexibility, simplicity, and equitable use, universal design not only ensures accessibility for people with disabilities but also enhances the experience for a broader audience, including people with temporary impairments, elderly users, or people facing challenging environments.</p>
 
         <h2>User Diversity</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>User diversity acknowledges that individuals have varying needs, preferences, and contexts. This includes differences in physical abilities, cognitive abilities, language proficiency, and age. For example, children and elderly users may require larger text or simplified navigation, while users with visual or hearing impairments need adaptable interfaces or alternate ways of accessing information. Additionally, language differences and cultural contexts must be considered, especially in global or multi-lingual environments. Universal design strives to address this diversity by creating products and environments that cater to a wide range of users, ensuring that everyone, regardless of their background or abilities, can benefit from the design.</p>
+
+        <h2>Examples of Universal Design in Tech</h2>
+        <p>In the digital realm, universal design is particularly important as technology becomes more integral to daily life. Examples include responsive web design, which ensures that websites function well on a variety of devices and screen sizes, making information accessible to a wider audience. Accessible color palettes, which take into account users with color blindness or low vision, are another important example, allowing for better readability and user engagement. Adaptable user interfaces, such as customizable text sizes, voice-controlled features, and the option to adjust contrast, ensure that users can tailor their experience to meet their specific needs, regardless of their physical or cognitive abilities. These design choices make digital spaces more inclusive, fostering a better user experience for everyone.</p>
+
     </main>
 
     <footer>

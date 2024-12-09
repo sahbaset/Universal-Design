@@ -6,8 +6,53 @@
     <title>Why Universal Design</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Skip link styles */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: #000;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #f0f0f0;
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
     <header>
         <h1>Why Universal Design</h1>
     </header>
@@ -21,20 +66,23 @@
         </ul>
     </nav>
 
-        <main>
-            <h2>Moral Imperative</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <main id="main-content">
+        <h2>Moral Imperative</h2>
+        <p>Universal design is a moral imperative because it acknowledges the full spectrum of human diversity and aims to provide equal access for everyone. By designing products, websites, and environments with inclusivity in mind, we show respect for the varied abilities, backgrounds, and needs of all people. Whether someone has a disability, speaks a different language, or uses a different device, universal design ensures that no one is left behind. It reflects a society that values fairness, compassion, and the principle that all individuals deserve the same opportunities to participate fully in the digital world. Designing inclusively isn't just a choice—it's a responsibility to uphold human dignity and ensure that everyone can engage with technology on their terms.</p>
 
-            <h2>Business Advantages</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <h2>Business Advantages</h2>
+        <p>Universal design is not only an ethical choice but also a smart business strategy. Studies have shown that making products and services more accessible increases customer satisfaction and widens the user base. By embracing accessibility, businesses tap into a broader market, including individuals with disabilities, older adults, and those who may have temporary impairments, such as a broken arm. These groups represent a significant portion of potential customers who may otherwise be excluded. Furthermore, inclusive design fosters positive brand perception and loyalty, leading to higher engagement, more traffic, and ultimately, increased revenue. In today's competitive market, accessibility is not just a bonus—it's a key driver of growth and customer retention.</p>
 
-            <h2>Legal Compliance</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <h2>Legal Compliance</h2>
+        <p>With the rise of digital technology, many countries have established legal requirements around accessibility, making universal design a legal necessity. In the United States, for example, the Americans with Disabilities Act (ADA) mandates that digital spaces be accessible to individuals with disabilities, while international standards like the Web Content Accessibility Guidelines (WCAG) provide detailed criteria for web design. Failing to comply with these regulations can result in lawsuits, penalties, and damaged reputations. By proactively adopting universal design practices, companies not only avoid legal trouble but also demonstrate their commitment to providing an equitable experience for all users, ensuring compliance with legal frameworks and fostering a more inclusive digital environment.</p>
 
-            <h2>Future-Proofing Products</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </main>
-    </div>
+        <h2>User Experience Enhancement</h2>
+        <p>Universal design isn't just about meeting the needs of specific groups; it enhances the overall user experience for everyone. When a product is designed with accessibility in mind, it becomes more intuitive, efficient, and pleasant to use, regardless of the user's abilities. For instance, clear navigation, readable fonts, and easily adjustable settings create a seamless and enjoyable experience for all users. As technology continues to evolve, the expectations for ease of use and accessibility are rising. By prioritizing universal design, companies can ensure that their products meet these evolving demands and provide a consistently high-quality experience for every user, resulting in greater satisfaction and loyalty.</p>
+
+        <h2>Future-Proofing Products</h2>
+        <p>Investing in universal design today is a way of future-proofing products for tomorrow. As technology evolves and user demographics shift, accessibility will only become more important. New technologies, such as voice-activated systems, augmented reality, and artificial intelligence, offer exciting opportunities, but they must be designed inclusively to ensure that they are accessible to all. By adopting universal design principles now, businesses can ensure that their products remain relevant and adaptable in the future, catering to an increasingly diverse and tech-savvy user base. Universal design ensures longevity and scalability, making it an essential strategy for companies seeking to remain competitive in an ever-changing digital landscape.</p>
+
+    </main>
 
     <footer>
         <p>Promoting Universal Design for an Inclusive Digital World</p>
